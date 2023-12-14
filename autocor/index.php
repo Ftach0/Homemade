@@ -1,6 +1,6 @@
 <?php
 if (!empty($_POST["inputText"])){
-$words = ["дорога"=>"road","путь"=>"way","машина"=>"car" ];
+$words = ["дорога"=>"road","путь"=>"way","машина"=>"car","песок"=>"sand","камень"=>"stone"];
 foreach ($words as $ru => $en){
     $inputText = str_replace($ru,$en,$inputText);
 }
