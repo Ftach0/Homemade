@@ -12,6 +12,5 @@ echo $inputText;
     <textarea name="inputText"></textarea>
     <br>
     <input type="submit"> 
-
 </form>
 
