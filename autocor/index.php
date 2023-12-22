@@ -1,16 +1,23 @@
 <?php
 if (!empty($_POST["inputText"])){
+    $inputText = $_POST["inputText"];
 $words = ["дорога"=>"road","путь"=>"way","машина"=>"car","песок"=>"sand","камень"=>"stone"];
 foreach ($words as $ru => $en){
     $inputText = str_replace($ru,$en,$inputText);
 }
-echo $inputText;
 }
 ?>
-<form action="" method="Post">
+<html>
+    <head></head>
+    <body>
+      <form action="" method="Post">
     <br>
     <textarea name="inputText"></textarea>
     <br>
     <input type="submit"> 
-</form>
-
+</form>  
+</body>
+</html>
+<?php
+    echo  "<b>".$inputText."</b>";
+?>
