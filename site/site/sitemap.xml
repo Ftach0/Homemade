@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+        <loc>http://localhost/LEBEDEV/site/index.php</loc>
+        <lastmod>2023-24-12</lastmod>
+        <changefreq>weekly</changefreq>
+        <priority>1.0</priority>
+    </url>
+    <url>
+        <loc>http://localhost/LEBEDEV/site/index2.php</loc>
+        <lastmod>2023-24-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+ <url>
+        <loc>http://localhost/LEBEDEV/site/index3.php</loc>
+        <lastmod>2023-24-23</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+	<url>
+        <loc>http://localhost/LEBEDEV/site/index4.php</loc>
+        <lastmod>2023-23-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+	<url>
+        <loc>http://localhost/LEBEDEV/site/index5.php</loc>
+        <lastmod>2023-23-12</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+</urlset>
