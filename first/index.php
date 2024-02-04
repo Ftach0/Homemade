@@ -7,23 +7,17 @@
     <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
     <script>
         $(document).ready(function(){
-            // Заполняем первый выпадающий список при загрузке страницы
-            fillRegions();
-
-            // Обработчик события изменения первого списка
-            $('#region').change(function(){
+           fillRegions();
+           $('#region').change(function(){
                 var selectedRegion = $('#region').val();
                 updateCityList(selectedRegion);
             });
-
-            // Обработчик события нажатия кнопки "Выбор"
             $('#selectButton').click(function(){
                 var selectedRegion = $('#region option:selected').text();
                 var selectedCity = $('#city option:selected').text();
                 displaySelectionResults(selectedRegion, selectedCity);
             });
         });
-
         function fillRegions() {
             $.ajax({
                 url: 'regions.php',
@@ -36,7 +30,6 @@
                 }
             });
         }
-
         function updateCityList(selectedRegion) {
             if(selectedRegion === "0"){
                 $('#city').hide();
@@ -58,7 +51,6 @@
                 });
             }
         }
-
         function displaySelectionResults(selectedRegion, selectedCity) {
             $('#result').html('<p>Выбранный регион: ' + selectedRegion + '</p><p>Выбранный город: ' + selectedCity + '</p>');
         }
@@ -66,15 +58,11 @@
 </head>
 <body>
     <h1>Выбор региона и города</h1>
-
     <label for="region">Регион:</label>
     <select id="region"></select>
-
     <label for="city">Город:</label>
     <select id="city" style="display:none;"></select>
-
     <button id="selectButton" style="display:none;">Выбор</button>
-
     <div id="result"></div>
 </body>
 </html>
